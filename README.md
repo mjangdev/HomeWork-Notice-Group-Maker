@@ -7,12 +7,12 @@
 
 `db_con.php`에 DB 정보를 입력해주셔야 합니다.
 
-```
+```sql
 CREATE DATABASE IF NOT EXISTS `web_hw`;
 USE `web_hw`;
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS `items` (
   `group_id` text COLLATE utf8mb4_general_ci,
   `item_id` text COLLATE utf8mb4_general_ci,
@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `items` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS `teams` (
   `group_id` text COLLATE utf8mb4_general_ci,
   `group_name` text COLLATE utf8mb4_general_ci,
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `teams` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 ```
 
-```
+```sql
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int NOT NULL AUTO_INCREMENT,
   `user_id` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
